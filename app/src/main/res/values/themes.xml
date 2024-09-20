@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MVMRapp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/black</item> <!-- Colore nero per la barra di stato -->
+        <item name="android:textColor">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+    </style>
+    <style name="Theme.MVMRapp" parent="Base.Theme.MVMRapp" />
+    <!-- Stile personalizzato per i bottoni nel tema chiaro -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:background">@drawable/rounded_black_button</item>
+        <item name="backgroundColor">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+    </style>
+</resources>

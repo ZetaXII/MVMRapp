@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black"
+                app:srcCompat="@drawable/logo_principale_nero" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/text_view_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report completato."
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/newScan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="NEW SCAN"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                style="@style/ButtonStyle"
+                android:onClick="newScan"/>
+
+            <Button
+                android:id="@+id/exportReportAsPdf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="EXPORT REPORT AS PDF"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                style="@style/ButtonStyle"
+                android:onClick="exportReportAsPdf"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/text_view_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vulnerabilità e Risultati:"
+                android:textSize="22sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/text_view_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp" />
+            </ScrollView>
+        </LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
